@@ -13,9 +13,24 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource/heebo": "^4.5.15",
+    "babel-plugin-styled-components": "^2.1.1",
+    "framer-motion": "^10.12.4",
     "gatsby": "^5.9.0",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-image": "^3.9.0",
+    "gatsby-plugin-react-helmet": "^6.9.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.9.0",
+    "gatsby-plugin-sitemap": "^6.9.0",
+    "gatsby-plugin-styled-components": "^6.9.0",
+    "gatsby-source-contentful": "^8.9.1",
+    "gatsby-transformer-sharp": "^5.9.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.8.0",
+    "styled-components": "^5.3.10"
   },
   "repository": {
     "type": "git",
