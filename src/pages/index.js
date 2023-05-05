@@ -1,17 +1,18 @@
 import * as React from 'react'
 import Layout from '../components/Layout'
-import BannerModule from '../components/BannerModule/BannerModule'
+import HeroModule from '../components/Hero/HeroModule'
 import BasicTextModule from '../components/BasicTextModule/BasicTextModule'
 import PerksModule from '../components/PerksModule/PerksModule'
 import Perk from '../components/PerksModule/Perk'
-import Features from '../components/Features/Features'
+import Features from '../components/Features/Projects'
 import LatestPosts from '../components/Post/LatestPosts'
 export default function Home() {
   return (
     <Layout>
-      <BannerModule
-        title='Welcome to Said.'
-        subTitle='Using a combination of Gatsby and Contentful, Said is ready to deploy and simple to use.'
+      <HeroModule
+        title='Willkommen in Company'
+        subTitle='Website erstellen lassen –
+Gedacht. Gemacht.'
       />
       <BasicTextModule
         title='A super-fast theme that is easy to get started, using the power of
@@ -29,10 +30,10 @@ export default function Home() {
         title='Featured Products from Barcadia.'
         introduction='Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas.'
       />
-      <LatestPosts
+      {/*       <LatestPosts
         title='The Latest from Barcadia'
         introduction='Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla.'
-      />
+      /> */}
     </Layout>
   )
 }

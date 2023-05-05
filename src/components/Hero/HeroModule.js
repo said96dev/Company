@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link, navigate } from 'gatsby'
-import { BannerModuleStyles } from './BannerModuleStyles'
+import { HeroModuleStyles } from './HeroModuleStyles'
 import { StaticImage } from 'gatsby-plugin-image'
 import Button from '../Button/Button'
 
-const BannerModule = ({ children, title, subTitle, price, enquire }) => {
+const HeroModule = ({ children, title, subTitle, price, enquire }) => {
   function scrollToArea() {
     navigate('#topContent')
   }
 
   return (
     <>
-      <BannerModuleStyles>
+      <HeroModuleStyles>
         {children ? (
           children
         ) : (
@@ -25,7 +25,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           />
         )}
 
-        <div className='container'>
+        <div className='container container__tight'>
           <div className='banner__content'>
             {title && (
               <h1>
@@ -54,10 +54,10 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
           </div>
         </div>
         <div className='gradient'></div>
-      </BannerModuleStyles>
+      </HeroModuleStyles>
       <span id='topContent'></span>
     </>
   )
 }
 
-export default BannerModule
+export default HeroModule

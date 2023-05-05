@@ -65,7 +65,7 @@ const NavModule = () => {
 
           <LogoStyles>
             <Link to='/'>
-              Said
+              Company
               <span>.</span>
             </Link>
           </LogoStyles>

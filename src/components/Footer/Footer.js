@@ -2,9 +2,10 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { menuItems } from '../../constants/links'
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from './FooterStyles'
-/* import useAllProduct from '../../hooks/use-all-product'
-import { UseSiteMetadata } from '../../hooks/useSiteMetadata' */
-import {
+import usePorject from '../../hooks/use-project'
+import socialLinks from '../../constants/social_links'
+/* import { UseSiteMetadata } from '../../hooks/useSiteMetadata'
+ */ import {
   FaFacebookSquare as Facebook,
   FaTwitterSquare as Twitter,
   FaInstagram as Instagram,
@@ -12,8 +13,8 @@ import {
 } from 'react-icons/fa'
 
 const Footer = () => {
-  /*   const allProduct = useAllProduct()
-  const siteMeta = UseSiteMetadata() */
+  const allProjects = usePorject()
+  /*   const siteMeta = UseSiteMetadata() */
   return (
     <FooterStyles style={{ marginBottom: 0 }} className='section'>
       <div className='container container__tight'>
@@ -32,7 +33,7 @@ const Footer = () => {
             })}
           </ul>
         </FooterMenuStyles>
-        {/*         {allProduct.length > 0 && (
+        {allProjects.length > 0 && (
           <FooterMenuStyles className='footer__menu products__menu'>
             <h5>
               <Link to='/products'>
@@ -40,12 +41,12 @@ const Footer = () => {
               </Link>
             </h5>
             <ul>
-              {allProduct.map((item, index) => {
-                const { gatsbyPath, title } = item
+              {allProjects.map((item, index) => {
+                const { url, title } = item
 
                 return (
                   <li key={index}>
-                    <Link to={gatsbyPath}>
+                    <Link to={url}>
                       {title}
                       <span>.</span>
                     </Link>
@@ -54,66 +55,27 @@ const Footer = () => {
               })}
             </ul>
           </FooterMenuStyles>
-        )} */}
-
-        {/*         {siteMeta.twitterUsername ||
-        siteMeta.facebookUsername ||
-        siteMeta.instagramUsername ||
-        siteMeta.linkedinUsername ? (
-          <FooterMenuStyles className='footer__menu social__menu'>
-            <h5>
-              Follow Barcadia<span>.</span>
-            </h5>
-            <ul>
-              {siteMeta.twitterUsername && (
-                <li>
+        )}
+        <FooterMenuStyles className='footer__menu social__menu'>
+          <h5>
+            Follow Compnay<span style={{ color: 'var(--primary)' }}>.</span>
+          </h5>
+          <ul>
+            {socialLinks.map((link, index) => {
+              return (
+                <li key={index}>
                   <a
-                    href={`https://www.twitter.com/${siteMeta.twitterUsername}`}
-                    target='_blank'
+                    href={link.url}
                     rel='nofollow noreferrer noopener'
+                    target='_blank'
                   >
-                    <Twitter />
+                    {link.icon}
                   </a>
                 </li>
-              )}
-              {siteMeta.facebookUsername && (
-                <li>
-                  <a
-                    href={`https://www.facebook.com/${siteMeta.facebookUsername}`}
-                    target='_blank'
-                    rel='nofollow noreferrer noopener'
-                  >
-                    <Facebook />
-                  </a>
-                </li>
-              )}
-              {siteMeta.instagramUsername && (
-                <li>
-                  <a
-                    href={`https://www.instagram.com/${siteMeta.instagramUsername}`}
-                    target='_blank'
-                    rel='nofollow noreferrer noopener'
-                  >
-                    <Instagram />
-                  </a>
-                </li>
-              )}
-              {siteMeta.linkedinUsername && (
-                <li>
-                  <a
-                    href={`https://www.linkedin.com/in/${siteMeta.linkedinUsername}`}
-                    target='_blank'
-                    rel='nofollow noreferrer noopener'
-                  >
-                    <Linkedin />
-                  </a>
-                </li>
-              )}
-            </ul>
-          </FooterMenuStyles>
-        ) : (
-          ''
-        )} */}
+              )
+            })}
+          </ul>
+        </FooterMenuStyles>
       </div>
       <CopyrightStyles>
         <div className='container container__tight'>

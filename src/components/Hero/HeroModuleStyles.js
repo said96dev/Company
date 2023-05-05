@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BannerModuleStyles = styled.section`
+export const HeroModuleStyles = styled.section`
   height: 100vh;
   position: relative;
   padding: 30px var(--borderSpacing);
