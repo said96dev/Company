@@ -19,14 +19,16 @@ const Footer = () => {
     <FooterStyles style={{ marginBottom: 0 }} className='section'>
       <div className='container container__tight'>
         <FooterMenuStyles className='footer__menu'>
-          <h5>Links</h5>
+          <h5>
+            Links<span style={{ color: 'var(--primary)' }}>.</span>
+          </h5>
           <ul>
             {menuItems.map((item, index) => {
               return (
                 <li key={index}>
                   <Link to={item.path} activeClassName='menu__item--active'>
                     {item.text}
-                    <span>.</span>
+                    <span style={{ color: 'var(--primary)' }}>.</span>
                   </Link>
                 </li>
               )
@@ -37,7 +39,8 @@ const Footer = () => {
           <FooterMenuStyles className='footer__menu products__menu'>
             <h5>
               <Link to='/products'>
-                All Products<span>.</span>
+                Alle Produkte
+                <span style={{ color: 'var(--primary)' }}>.</span>
               </Link>
             </h5>
             <ul>

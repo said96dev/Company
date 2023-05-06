@@ -73,6 +73,7 @@ export const PerkStyles = styled.aside`
   text-align: left;
   ul {
     padding-left: 0;
+    margin-top: 2rem;
   }
   li {
     list-style: none;

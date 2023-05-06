@@ -15,13 +15,11 @@ export default function Home() {
 Gedacht. Gemacht.'
       />
       <BasicTextModule
-        title='A super-fast theme that is easy to get started, using the power of
-            GatsbyJS'
-        content='Using modern CSS properties such as grid, this theme is optmised for
-            speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product.'
-        link='/products'
-        linkText='View Products'
+        title='Die eigene Website von Profis erstellen lassen'
+        content='Keinen freien Moment? Überlassen Sie Ihre Website uns, während Sie sich auf Ihr Tagesgeschäft fokussieren! Wir bieten für jedes Vorhaben das passende Angebot.'
+        paragraph='Weitere Informationen erhalten Sie auf unserer Produktseite oder telefonisch unter Tel: 0123 456 78912.'
+        link='/services'
+        linkText='Services anzeigen'
       />
       <PerksModule>
         <Perk title='The Title' content='The content' />

@@ -24,7 +24,7 @@ const Project = ({ feature }) => {
           <div className='features__item--content'>
             {title && <h4>{title}</h4>}
 
-            <Button text='Read More' as='span' arrow={true} />
+            <Button text='Mehr erfahren' as='span' arrow={true} />
           </div>
         )}
       </Link>
