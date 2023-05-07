@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // Create the context
-const MenuContext = React.createContext()
+const MenuContext = React.createContext('')
 
 export function MenuProvider({ children }) {
   // Place state in here
