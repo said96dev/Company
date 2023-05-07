@@ -12,7 +12,7 @@ const BasicTextModule = ({ title, content, link, linkText, paragraph }) => {
           {title && <h2>{title}</h2>}
           {content && <p style={{ marginBottom: '60px' }}>{content}</p>}
           {paragraph && (
-            <p style={{ marginBottom: '40px', maxWidth: '27rem' }}>
+            <p style={{ marginBottom: '40px', maxWidth: '27rem ' }}>
               {paragraph}
             </p>
           )}
