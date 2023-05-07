@@ -19,14 +19,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_API_KEY,
       },
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://barcadia.netlify.com',
-        sitemap: 'https://barcadia.netlify.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
