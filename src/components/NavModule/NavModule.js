@@ -39,10 +39,10 @@ const NavModule = () => {
 
   return (
     <NavModuleStyles>
-      <div className='nav'>
-        <div className='container'>
+      <div className="nav">
+        <div className="container">
           <HamburgerStyles
-            initial='closed'
+            initial="closed"
             animate={isOpen ? 'open' : 'closed'}
             onClick={toggleNav}
             onKeyDown={toggleNav}
@@ -50,33 +50,33 @@ const NavModule = () => {
             className={isOpen ? ' open' : ''}
           >
             <motion.span
-              className='bar'
+              className="bar"
               variants={barOneVariants}
             ></motion.span>
             <motion.span
-              className='bar'
+              className="bar"
               variants={barTwoVariants}
             ></motion.span>
             <motion.span
-              className='bar'
+              className="bar"
               variants={barThreeVariants}
             ></motion.span>
           </HamburgerStyles>
 
           <LogoStyles>
-            <Link to='/'>
-              Company
+            <Link to="/">
+              AL Alltjänst
               <span>.</span>
             </Link>
           </LogoStyles>
         </div>
       </div>
       <motion.div
-        initial='closed'
+        initial="closed"
         animate={isOpen ? 'open' : 'closed'}
         variants={menuList}
         transition={{ type: 'ease', stiffness: 50, velocity: 50 }}
-        className='menu'
+        className="menu"
       >
         <NavTopLevel>
           {menuItems.map((item, index) => (
@@ -85,7 +85,7 @@ const NavModule = () => {
                 onClick={toggleNav}
                 onKeyDown={toggleNav}
                 to={item.path}
-                activeClassName='menu__item--active'
+                activeClassName="menu__item--active"
               >
                 {item.text}
                 <span>.</span>

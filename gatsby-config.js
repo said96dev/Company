@@ -29,7 +29,7 @@ module.exports = {
       options: {
         spaceId: `txj9waor5u3y`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_API_KEY,
+        accessToken: 'K7zajywi8FG60wpyocXjsdVTEmGdyLsnd7NszMZDnDw',
       },
     },
     {

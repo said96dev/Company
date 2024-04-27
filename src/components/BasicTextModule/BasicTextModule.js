@@ -6,8 +6,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const BasicTextModule = ({ title, content, link, linkText, paragraph }) => {
   return (
-    <BasicTextModuleStyles className='section section_padding'>
-      <div className='container container__tight'>
+    <BasicTextModuleStyles className="section section_padding">
+      <div className="container container__tight">
         <div>
           {title && <h2>{title}</h2>}
           {content && <p style={{ marginBottom: '60px' }}>{content}</p>}
@@ -19,10 +19,10 @@ const BasicTextModule = ({ title, content, link, linkText, paragraph }) => {
           <Button text={linkText} as={Link} to={link} />
         </div>
         <StaticImage
-          src='../../assets/images/basic.svg'
-          alt='Banner Image'
-          layout='fullWidth'
-          placeholder='blurred'
+          src="../../assets/images/undraw_under_construction_-46-pa.svg"
+          alt="Banner Image"
+          layout="fullWidth"
+          placeholder="blurred"
         />
       </div>
     </BasicTextModuleStyles>

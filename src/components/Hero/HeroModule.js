@@ -16,17 +16,17 @@ const HeroModule = ({ children, title, subTitle, price, enquire }) => {
           children
         ) : (
           <StaticImage
-            className='banner__image'
-            imgClassName='banner__image--content'
-            src='../../assets/images/hero1.jpg'
-            alt='Banner Image'
-            layout='fullWidth'
-            placeholder='blurred'
+            className="banner__image"
+            imgClassName="banner__image--content"
+            src="../../assets/images/hero5.jpg"
+            alt="Banner Image"
+            layout="fullWidth"
+            placeholder="blurred"
           />
         )}
 
-        <div className='container container__tight'>
-          <div className='banner__content'>
+        <div className="container container__tight">
+          <div className="banner__content">
             {title && (
               <h1>
                 {title}
@@ -34,28 +34,23 @@ const HeroModule = ({ children, title, subTitle, price, enquire }) => {
               </h1>
             )}
             {subTitle && <h2>{subTitle}</h2>}
-            {price && (
-              <h2 className='price'>
-                £{price}
-                <span style={{ color: 'var(--primary)' }}>.</span>
-              </h2>
-            )}
-            <div className='banner__btns'>
+
+            <div className="banner__btns">
               {enquire && (
                 <Button
-                  className='btn'
-                  text='Enquire Now'
+                  className="btn"
+                  text="Enquire Now"
                   as={Link}
-                  to='/contact'
+                  to="/contact"
                 />
               )}
-              <Button onClick={scrollToArea} text='Mehr erfahren' />
+              <Button onClick={scrollToArea} text="Mehr erfahren" />
             </div>
           </div>
         </div>
-        <div className='gradient'></div>
+        <div className="gradient"></div>
       </HeroModuleStyles>
-      <span id='topContent'></span>
+      <span id="topContent"></span>
     </>
   )
 }

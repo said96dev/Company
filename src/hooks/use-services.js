@@ -1,27 +1,24 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-const usePorject = () => {
+const useServices = () => {
   const data = useStaticQuery(query)
   const {
-    allContentfulProjects: { nodes: projects },
+    allContentfulServices: { nodes: services },
   } = data
-  return projects
+  return services
 }
 
 const query = graphql`
   {
-    allContentfulProjects {
+    allContentfulServices {
       nodes {
-        github
+        id
+        show
         title
-        url
-        stack {
-          stack
-        }
         description {
           description
         }
-        image {
+        img {
           gatsbyImageData(
             width: 500
             placeholder: BLURRED
@@ -32,4 +29,4 @@ const query = graphql`
     }
   }
 `
-export default usePorject
+export default useServices

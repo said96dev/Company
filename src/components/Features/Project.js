@@ -7,24 +7,24 @@ import { FeaturedProductStyles } from './ProjectsStyles'
 const Project = ({ feature }) => {
   const {
     url,
-    image,
+    img,
     title,
     description: { description },
   } = feature
-  const img = getImage(image)
+  const imgs = getImage(img)
   return (
     <FeaturedProductStyles>
       <Link to={url}>
         <GatsbyImage
-          className='features__item--img'
-          image={img}
-          alt='Product Image'
+          className="features__item--img"
+          image={imgs}
+          alt="Product Image"
         />
         {title && description && (
-          <div className='features__item--content'>
+          <div className="features__item--content">
             {title && <h4>{title}</h4>}
 
-            <Button text='Mehr erfahren' as='span' arrow={true} />
+            <Button text="Lär dig mer" as="span" arrow={true} />
           </div>
         )}
       </Link>

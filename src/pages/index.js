@@ -5,28 +5,26 @@ import BasicTextModule from '../components/BasicTextModule/BasicTextModule'
 import PerksModule from '../components/PerksModule/PerksModule'
 import Perk from '../components/PerksModule/Perk'
 import Features from '../components/Features/Projects'
-import LatestPosts from '../components/Post/LatestPosts'
 export default function Home() {
   return (
     <Layout>
       <HeroModule
-        title='Willkommen in Company'
-        subTitle='Website erstellen lassen –
-Gedacht. Gemacht.'
+        title="Välkomna till AL Alltjänst."
+        subTitle=" Din pålitliga partner för hem och företag!"
       />
       <BasicTextModule
-        title='Die eigene Website von Profis erstellen lassen'
-        content='Keinen freien Moment? Überlassen Sie Ihre Website uns, während Sie sich auf Ihr Tagesgeschäft fokussieren! Wir bieten für jedes Vorhaben das passende Angebot.'
-        paragraph='Weitere Informationen erhalten Sie auf unserer Produktseite oder telefonisch unter Tel: 0123 456 78912.'
-        link='/services'
-        linkText='Services anzeigen'
+        title=" AL Alltjänst: Ditt förstahandsval för måleri, renovering och underhåll av fastigheter"
+        content="
+På AL Alltjänst har vi engagerat oss i att leverera förstklassiga tjänster inom måleri, renovering och underhåll av fastigheter. Med vår långa erfarenhet och ett team av dedikerade proffs, ser vi till att varje projekt hanteras med yrkesskicklighet. Från första planering till slutförande, är vår högsta prioritet att du ska bli helt nöjd. Vi erbjuder pålitliga lösningar som inte bara gör din fastighet vackrare utan också förbättrar derens hållbarhet och funktion. Välj AL Alltjänst för att göra din vardag enklare och mer njutbar."
+        link="/services"
+        linkText="Visa tjänster"
       />
-      <PerksModule>
-        <Perk title='The Title' content='The content' />
-      </PerksModule>
+      {/*    <PerksModule>
+        <Perk title="The Title" content="The content" />
+      </PerksModule> */}
       <Features
-        title='Featured Products from Barcadia.'
-        introduction='Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas.'
+        title="Vivamus Interdum Neque Scelerisque"
+        introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
       />
       {/*       <LatestPosts
         title='The Latest from Barcadia'
