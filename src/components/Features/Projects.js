@@ -6,10 +6,9 @@ import useServices from '../../hooks/use-services'
 import Button from '../Button/Button'
 
 const Features = ({ title, introduction }) => {
-  console.log(window.location.pathname)
   const allServices = useServices()
   let services = allServices
-  const pathname = window.location.pathname
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
   if (pathname !== '/services/')
     services = allServices.filter((service) => service.show === true)
   return (
