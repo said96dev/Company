@@ -9,6 +9,8 @@ export const ProjectsStyles = styled.section`
       padding-right: var(--borderSpacing);
       margin-left: calc(var(--borderSpacing) * -1);
       width: calc(100% + (var(--borderSpacing) * 2));
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       @media (min-width: 1200px) {
         padding-bottom: 0;
         width: 100%;

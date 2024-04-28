@@ -2,14 +2,16 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { ProjectsStyles } from './ProjectsStyles'
 import Project from './Project'
-import usePorject from '../../hooks/use-project'
 import useServices from '../../hooks/use-services'
 import Button from '../Button/Button'
 
 const Features = ({ title, introduction }) => {
-  const allProjects = usePorject()
+  console.log(window.location.pathname)
   const allServices = useServices()
-  const services = allServices.filter((service) => service.show === true)
+  let services = allServices
+  const pathname = window.location.pathname
+  if (pathname !== '/services/')
+    services = allServices.filter((service) => service.show === true)
   return (
     <ProjectsStyles className="section">
       {title || introduction ? (
@@ -26,14 +28,13 @@ const Features = ({ title, introduction }) => {
           return <Project feature={node} key={index} />
         })}
       </div>
-      <div className="container container__tight learn__more">
-        <Button
-          as={Link}
-          to="/services"
-          text="Alla tjänster
-"
-        />
-      </div>
+      {pathname !== '/services/' ? (
+        <div className="container container__tight learn__more">
+          <Button as={Link} to="/services" text="Alla tjänster" />
+        </div>
+      ) : (
+        ''
+      )}
     </ProjectsStyles>
   )
 }

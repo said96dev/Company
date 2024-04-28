@@ -18,7 +18,7 @@ const HeroModule = ({ children, title, subTitle, price, enquire }) => {
           <StaticImage
             className="banner__image"
             imgClassName="banner__image--content"
-            src="../../assets/images/hero5.jpg"
+            src="../../assets/images/hero4.jpg"
             alt="Banner Image"
             layout="fullWidth"
             placeholder="blurred"
