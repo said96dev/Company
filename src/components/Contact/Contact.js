@@ -5,7 +5,8 @@ import { useForm, ValidationError } from '@formspree/react'
 import { Link } from 'gatsby'
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm(process.env.GATSBY_CONTACT_FORM)
+  const [state, handleSubmit] = useForm('mrgnjnyo')
+
   if (state.succeeded) {
     return (
       <div className="section container container__tight">
@@ -19,16 +20,39 @@ const Contact = () => {
   }
 
   return (
-    <ContactStyles className="section ">
-      <form onSubmit={handleSubmit} name="contact" netlify>
-        <input placeholder="Ditt namn..." type="text" name="name" />
-        <input placeholder="Ditt Emai..." type="email" name="email" />
+    <ContactStyles className="section">
+      <form onSubmit={handleSubmit} name="contact">
+        <label htmlFor="name">Namn:</label>
+        <input
+          id="name"
+          placeholder="Ditt namn..."
+          type="text"
+          name="name"
+          required
+        />
+        <ValidationError field="name" errors={state.errors} />
+
+        <label htmlFor="email">Email:</label>
+        <input
+          id="email"
+          placeholder="Ditt Email..."
+          type="email"
+          name="email"
+          required
+        />
+        <ValidationError field="email" errors={state.errors} />
+
+        <label htmlFor="message">Meddelande:</label>
         <textarea
+          id="message"
           placeholder="Ditt meddelande..."
           name="message"
           rows="5"
+          required
         ></textarea>
-        <Button text="Skicka meddelande" />
+        <ValidationError field="message" errors={state.errors} />
+
+        <Button text="Skicka meddelande" disabled={state.submitting} />
       </form>
     </ContactStyles>
   )
