@@ -1,8 +1,7 @@
 import React from 'react'
 import { MenuProvider } from './src/components/MenuContext'
 import { AnimatePresence } from 'framer-motion'
-import '@fontsource/heebo/400.css'
-import '@fontsource/heebo/700.css'
+import 'tailwindcss/tailwind.css' // Importieren Sie Tailwind CSS direkt in Ihren Komponenten
 
 export function wrapPageElement({ element }) {
   return <AnimatePresence>{element}</AnimatePresence>

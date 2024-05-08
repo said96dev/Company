@@ -10,7 +10,7 @@ export const ProjectsStyles = styled.section`
       margin-left: calc(var(--borderSpacing) * -1);
       width: calc(100% + (var(--borderSpacing) * 2));
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       @media (min-width: 1200px) {
         padding-bottom: 0;
         width: 100%;
@@ -18,6 +18,7 @@ export const ProjectsStyles = styled.section`
         padding-left: 0;
         padding-right: 0;
         gap: var(--gap);
+        grid-template-columns: 1fr 1fr 1fr;
       }
     }
   }

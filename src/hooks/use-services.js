@@ -14,6 +14,7 @@ const query = graphql`
       nodes {
         id
         show
+        slug
         title
         description {
           description

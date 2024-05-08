@@ -238,4 +238,7 @@ blockquote {
   text-align: center;
   margin-top: calc(var(--gap) / 2);
 }
+.richText{
+  font-size: 2rem;
+}
 `
