@@ -23,8 +23,8 @@ På AL Alltjänst har vi engagerat oss i att leverera förstklassiga tjänster i
         <Perk title="The Title" content="The content" />
       </PerksModule> */}
       <Features
-        title="Vivamus Interdum Neque Scelerisque"
-        introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
+        title="Våra Tjänster"
+        introduction="På AL Alltjänst erbjuder vi ett brett utbud av tjänster för att underhålla och förbättra din fastighet."
       />
       {/*       <LatestPosts
         title='The Latest from Barcadia'

@@ -160,6 +160,22 @@ blockquote {
   border-left: 2px solid var(--primary);
   padding-left: var(--gap);
 }
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none; /* Entfernt Unterstreichung von Links */
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
