@@ -46,7 +46,7 @@ const Footer = () => {
             </h5>
             <ul>
               <li>Telefon: 076-812 64 22ss</li>
-              <li>E-post: kontakta@al-alltjanst.com</li>
+              <li>E-post: kontaktalalltjanst@gmail.com</li>
               <li>Adress: Sörevägen 4, Östersund</li>
             </ul>
           </FooterMenuStyles>

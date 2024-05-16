@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import ServiceTemplate from '../templates/service-template'
 import Layout from '../components/Layout'
 import Features from '../components/Features/Projects'
 
@@ -9,8 +8,8 @@ const Services = () => {
     <>
       <Layout>
         <Features
-          title="Vivamus Interdum Neque Scelerisque"
-          introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
+          title="Våra Tjänster"
+          introduction="På AL Alltjänst erbjuder vi ett brett utbud av tjänster för att underhålla och förbättra din fastighet. Detta innebär att vi kan hjälpa till med allt från enklare underhållsarbete till mer omfattande renoveringar och förbättringar. Vårt mål är att se till att din fastighet inte bara bibehåller sitt värde, utan också förbättras över tid."
         />
       </Layout>
     </>
